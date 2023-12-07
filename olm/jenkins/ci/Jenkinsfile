@@ -6,5 +6,6 @@ olcnePipeline(
         customStages: [container: [enabled: false]],
         platforms: ['ol8'],
   	ol8ModulesToEnable: ['go-toolset:ol8addon'],
+        architectures: ['x86_64', 'aarch64'],
 )
 

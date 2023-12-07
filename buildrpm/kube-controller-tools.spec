@@ -11,7 +11,6 @@
 Name:           kube-controller-tools
 Version:        {{{ $version }}}
 Release:        1%{?dist}
-BuildArch:      x86_64
 Summary:        Tools for writing Kubernetes controllers
 License:        Apache-2.0
 Group:          System/Management
