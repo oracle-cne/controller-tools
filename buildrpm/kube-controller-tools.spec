@@ -42,5 +42,5 @@ install -p -m 755 -t %{buildroot}/%{_bindir} type-scaffold
 
 %changelog
 * {{{.changelog_timestamp}}} - {{{$version}}}-1
-- Added Oracle specific build files for node-driver-registrar.
+- Added Oracle specific build files for controller-tools.
 
