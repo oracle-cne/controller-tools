@@ -24,9 +24,9 @@ Tools for writing Kubernetes controllers
 %setup -q -n %{name}-%{version}
 
 %build
-go build -o controller-gen ./cmd/controller-gen 
-go build -o helpgen ./cmd/helpgen
-go build -o type-scaffold ./cmd/type-scaffold
+go build -trimpath=false -ldflags="-X main.version={{{$version}}}" -o controller-gen ./cmd/controller-gen 
+go build -trimpath=false -ldflags="-X main.version={{{$version}}}" -o helpgen ./cmd/helpgen
+go build -trimpath=false -ldflags="-X main.version={{{$version}}}" -o type-scaffold ./cmd/type-scaffold
 
 %install
 install -m 755 -d %{buildroot}%{_bindir}
